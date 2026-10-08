@@ -144,6 +144,12 @@
     document.querySelector('meta[property="og:title"]').setAttribute("content", p.name + " | Aaditude");
     document.querySelector('meta[property="og:description"]').setAttribute("content", p.name + " in " + p.color + ". Explore this Aaditude style from Instagram.");
     const alt = p.alt || (p.name + " in " + p.color);
+    function inquiryUrl(size) {
+      const message = "Hi Aaditude, I am interested in " + p.name + (size ? " in size " + size : "") +
+        ". Please confirm the exact style, availability and price." +
+        (p.instagramUrl ? "\nInstagram post: " + p.instagramUrl : "");
+      return "https://wa.me/" + whatsappNumber() + "?text=" + encodeURIComponent(message);
+    }
     mount.innerHTML = '<div class="breadcrumbs"><a href="shop.html">SHOP</a><span>/</span><span>' + escapeHtml(p.name.toUpperCase()) + '</span></div>' +
       '<div class="product-layout"><div class="detail-image"><img src="' + escapeHtml(p.image) + '" alt="' + escapeHtml(alt) + '"></div>' +
       '<div class="detail-info"><p class="eyebrow dark">AADITUDE / ' + escapeHtml(p.category.toUpperCase()) + '</p><h1>' + escapeHtml(p.name) + '</h1><p class="detail-price">' + rupees(p.price) + (config.catalogIsSample ? ' <small>guide price</small>' : '') + '</p>' +
@@ -151,6 +157,7 @@
       '<div class="size-heading"><strong>SELECT SIZE</strong><a href="size-guide.html">Size guide</a></div><div class="size-options" role="group" aria-label="Select size">' +
       p.sizes.map(function (size) { return '<button type="button" data-size="' + escapeHtml(size) + '" aria-pressed="false">' + escapeHtml(size) + '</button>'; }).join("") +
       '</div><button id="add-to-cart" class="button button-dark full" type="button" disabled>Choose a size</button>' +
+      (/^\d{11,15}$/.test(whatsappNumber()) ? '<a id="ask-on-whatsapp" class="button full inquiry-link" href="' + escapeHtml(inquiryUrl("")) + '" target="_blank" rel="noopener">Ask about this style on WhatsApp</a>' : '') +
       '<p class="detail-note">Photo from Aaditude Instagram. Exact item, price, fit and availability must be confirmed before orders open. ' + (p.instagramUrl ? '<a href="' + escapeHtml(p.instagramUrl) + '" target="_blank" rel="noopener">View original post</a>' : '') + '</p></div></div>';
     let selectedSize = "";
     mount.querySelectorAll("[data-size]").forEach(function (button) {
@@ -159,6 +166,8 @@
         mount.querySelectorAll("[data-size]").forEach(function (other) { other.setAttribute("aria-pressed", String(other === button)); });
         const add = document.getElementById("add-to-cart");
         add.disabled = false; add.textContent = "Add to bag";
+        const ask = document.getElementById("ask-on-whatsapp");
+        if (ask) ask.href = inquiryUrl(selectedSize);
       });
     });
     document.getElementById("add-to-cart").addEventListener("click", function () { if (selectedSize) addToCart(p.id, selectedSize); });

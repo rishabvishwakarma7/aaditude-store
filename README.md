@@ -16,7 +16,7 @@ Product names and prices are **guide values**, because the Instagram posts do no
 4. Confirm size measurements, delivery coverage, shipping charges, returns and contact details in the relevant HTML pages.
 5. Set `catalogIsSample: false`, then set `ordersEnabled: true`. Test a WhatsApp order from your own phone before sharing the site.
 
-The checkout sends an **order request** to WhatsApp. It does not verify a UPI transfer or create a server-side order. Confirm stock, shipping and payment manually before fulfilling an order.
+Each product page can now send a WhatsApp availability enquiry to the confirmed store number. When enabled, checkout sends an **order request** to WhatsApp. It does not verify a UPI transfer or create a server-side order. Confirm stock, shipping and payment manually before fulfilling an order.
 
 ## Files
 
