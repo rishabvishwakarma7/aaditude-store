@@ -96,7 +96,7 @@
       wa.innerHTML = '<span aria-hidden="true">✆</span><span>WhatsApp</span>';
       wa.addEventListener("click", function (event) {
         event.preventDefault();
-        if (!/^\d{11,15}$/.test(whatsappNumber())) { notify("Add your WhatsApp number in js/products.js before this link goes live."); return; }
+        if (!/^\d{11,15}$/.test(whatsappNumber())) { notify("WhatsApp chat is coming soon. You can message Aaditude on Instagram meanwhile."); return; }
         window.open("https://wa.me/" + whatsappNumber(), "_blank", "noopener");
       });
     }
@@ -249,9 +249,9 @@
     const email = String(config.contactEmail || "");
     const phone = whatsappNumber();
     details.innerHTML = '<div class="contact-card"><span>WHATSAPP</span>' +
-      (phone ? '<a href="https://wa.me/' + phone + '" target="_blank" rel="noopener">+' + phone + '</a>' : '<p>Add your store number in js/products.js</p>') +
-      '</div><div class="contact-card"><span>EMAIL</span>' +
-      (email && email.includes("@") ? '<a href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a>' : '<p>Add your support email in js/products.js</p>') + '</div>';
+      (phone ? '<a href="https://wa.me/' + phone + '" target="_blank" rel="noopener">+' + phone + '</a>' : '<p>WhatsApp chat is coming soon.</p>') +
+      '</div><div class="contact-card"><span>INSTAGRAM</span><a href="https://www.instagram.com/aaditude.vibe/" target="_blank" rel="noopener">@aaditude.vibe</a></div>' +
+      (email && email.includes("@") ? '<div class="contact-card"><span>EMAIL</span><a href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a></div>' : '');
   }
 
   renderShell();
