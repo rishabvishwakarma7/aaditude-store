@@ -1,0 +1,27 @@
+/* Aaditude settings. Fill in real order details before enabling checkout. */
+window.STORE_CONFIG = {
+  brand: "Aaditude",
+  whatsappNumber: "", // Digits only, including 91
+  upiId: "",
+  upiName: "Aaditude",
+  contactEmail: "",
+  qrImage: "images/upi-qr-placeholder.svg",
+  ordersEnabled: false,
+  catalogIsSample: true
+};
+
+/* Photos below come from @aaditude.vibe posts. Names and prices are PREVIEW
+   labels until you confirm the exact items, stock, sizes and selling prices. */
+window.PRODUCTS = [
+  { id: 1, name: "Checked Statement Shirt", category: "Shirts", price: 1199, color: "Red", fit: "Relaxed", sizes: ["S","M","L","XL"], image: "images/instagram-checked-shirt.jpg", alt: "Red checked shirt hanging in the Aaditude store", instagramUrl: "https://www.instagram.com/aaditude.vibe/reel/DeMsFkJIkwe/", description: "A red checked shirt seen on Aaditude Instagram. Confirm the exact fabric, sizes, price and availability before orders open." },
+  { id: 2, name: "Washed Jacket", category: "Jackets", price: 1499, color: "Light wash", fit: "Relaxed", sizes: ["S","M","L","XL"], image: "images/instagram-washed-jacket.jpg", alt: "Light washed jacket hanging in the Aaditude store", instagramUrl: "https://www.instagram.com/aaditude.vibe/reel/DeMnHzioF13/", description: "A light washed jacket from the Aaditude feed. Final specifications and price are awaiting confirmation." },
+  { id: 3, name: "Cotton Lower Edit", category: "Lowers", price: 999, color: "Mixed", fit: "Relaxed", sizes: ["S","M","L"], image: "images/instagram-cotton-lowers.jpg", alt: "Folded lowers in several colours displayed by Aaditude", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/DeHetl6iG3q/", description: "Cotton lowers shown on Aaditude Instagram. The post asks customers to DM for price; this website price is only a guide." },
+  { id: 4, name: "Sports Graphic Tee", category: "T-shirts", price: 899, color: "Dark grey", fit: "Relaxed", sizes: ["S","M","L","XL"], image: "images/instagram-streetwear-look.jpg", alt: "Model in a dark graphic T-shirt and grey lower inside the Aaditude store", instagramUrl: "https://www.instagram.com/aaditude.vibe/reel/Dd4LADFygVW/", description: "A sports-inspired tee look shown in the Aaditude store. Confirm exact brand, fit, price and availability." },
+  { id: 5, name: "Baggy Cotton Lower", category: "Lowers", price: 1199, color: "Grey / Black", fit: "Baggy", sizes: ["M","L","XL"], image: "images/instagram-baggy-lowers.jpg", alt: "Grey and black baggy cotton lowers laid out for an Aaditude post", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/Dd3mxNZlMMi/", description: "Baggy cotton lowers featured on Aaditude Instagram. Final price and live stock are awaiting confirmation." },
+  { id: 6, name: "Football Jersey Edit", category: "Jerseys", price: 999, color: "Mixed", fit: "Regular", sizes: ["S","M","L","XL"], image: "images/instagram-football-jerseys.jpg", alt: "Colourful football jerseys hanging in the Aaditude store", instagramUrl: "https://www.instagram.com/aaditude.vibe/reel/DdjpbaaovlB/", description: "Football jersey styles from the Aaditude store display. Select an exact design only after stock is confirmed." },
+  { id: 7, name: "Graphic Tee Drop", category: "T-shirts", price: 1099, color: "Mixed", fit: "Relaxed", sizes: ["S","M","L"], image: "images/instagram-graphic-jerseys.jpg", alt: "Three graphic T-shirts arranged on the floor for an Aaditude photo", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/DdjQ0FpoFs-/", description: "Graphic T-shirts from an Aaditude new-drop post. The post lists sizes S to L and asks customers to DM for price." },
+  { id: 8, name: "Yellow Football Jersey", category: "Jerseys", price: 1099, color: "Yellow", fit: "Regular", sizes: ["S","M","L","XL"], image: "images/instagram-yellow-jersey.jpg", alt: "Yellow Brazil-style football jersey hanging on a rack", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/DdjQEHXCMBQ/", description: "A yellow football jersey look from Aaditude Instagram. Confirm brand, sizing, price and availability." },
+  { id: 9, name: "Black Football Tee Edit", category: "T-shirts", price: 999, color: "Black", fit: "Relaxed", sizes: ["S","M","L","XL"], image: "images/instagram-black-jerseys.jpg", alt: "Group of black football-inspired graphic T-shirts displayed by Aaditude", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/DdjPaCniDJT/", description: "Black football-inspired tees shown together on Aaditude Instagram. Exact design selection and price need confirmation." },
+  { id: 10, name: "Baggy Jeans", category: "Jeans", price: 1499, color: "Blue / Black", fit: "Baggy", sizes: ["28","30","32","34"], image: "images/instagram-baggy-jeans.jpg", alt: "Several blue and black baggy jeans laid out on a tiled floor", instagramUrl: "https://www.instagram.com/aaditude.vibe/p/DdbPl7IIRyF/", description: "Baggy jeans from Aaditude Instagram. The post lists waist sizes 28 to 34 and asks customers to DM for price." },
+  { id: 11, name: "Striped Shirt Edit", category: "Shirts", price: 999, color: "Mixed", fit: "Relaxed", sizes: ["S","M","L","XL"], image: "images/instagram-striped-shirts.jpg", alt: "Striped shirts hanging in the Aaditude store", instagramUrl: "https://www.instagram.com/aaditude.vibe/reel/DdZXAvsIZI6/", description: "Striped shirts displayed in the Aaditude store. Pick an exact colour only after availability is confirmed." }
+];

@@ -1,0 +1,4 @@
+# Generated source image and QA files outside the published static site.
+aaditude-hero-editorial.png
+.qa-chrome/
+qa-*.png
