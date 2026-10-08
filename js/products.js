@@ -1,7 +1,7 @@
 /* Aaditude settings. Fill in real order details before enabling checkout. */
 window.STORE_CONFIG = {
   brand: "Aaditude",
-  whatsappNumber: "", // Digits only, including 91
+  whatsappNumber: "917389890522", // Confirmed Aaditude order number, including 91
   upiId: "",
   upiName: "Aaditude",
   contactEmail: "",

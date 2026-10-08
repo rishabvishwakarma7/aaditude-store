@@ -12,7 +12,7 @@ Product names and prices are **guide values**, because the Instagram posts do no
 
 1. Open [js/products.js](js/products.js). Confirm or replace the product names, prices, descriptions, sizes and image paths.
 2. Add original product photos to `images/` and point each product's `image` field to its file.
-3. In `STORE_CONFIG`, add the WhatsApp order number with country code (digits only), UPI ID, support email and QR image path.
+3. The confirmed WhatsApp number is configured. In `STORE_CONFIG`, add the UPI ID, support email and QR image path.
 4. Confirm size measurements, delivery coverage, shipping charges, returns and contact details in the relevant HTML pages.
 5. Set `catalogIsSample: false`, then set `ordersEnabled: true`. Test a WhatsApp order from your own phone before sharing the site.
 
