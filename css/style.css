@@ -137,6 +137,61 @@ h1,h2,h3{line-height:1.08}
 .upi-line{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;padding:12px 0;border-top:1px solid #bbb;border-bottom:1px solid #bbb;font-size:.82rem}
 .upi-line strong{overflow-wrap:anywhere}
 
+/* About page: brand-led story and the real Bhopal store location */
+.about-page{padding:0 16px 72px}
+.about-intro{display:grid;grid-template-columns:1fr;gap:34px;padding:56px 0 70px}
+.about-intro h1{font:400 clamp(3.1rem,11vw,6.8rem)/.9 var(--display);letter-spacing:-.075em;text-transform:uppercase;margin:0 0 25px}
+.about-intro h1 span{color:#777}
+.about-lead{max-width:49ch;font-size:1.04rem;line-height:1.7;color:#353535;margin:0}
+.about-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin-top:27px}
+.about-actions .button{width:100%}
+.about-actions .text-link{font-size:.7rem}
+.about-categories{margin:36px 0 0;padding-top:15px;border-top:1px solid var(--line);font-size:.62rem;font-weight:800;letter-spacing:.08em}
+.about-categories span{color:#aaa;margin:0 4px}
+.about-brand-panel{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;min-height:360px;overflow:hidden;background:#171717;color:#fff;padding:19px}
+.about-brand-panel:before,.about-brand-panel:after{content:"";position:absolute;z-index:-1;left:50%;top:50%;border:1px solid #ffffff24;border-radius:50%;transform:translate(-50%,-50%)}
+.about-brand-panel:before{width:330px;height:330px}
+.about-brand-panel:after{width:510px;height:510px}
+.about-panel-top,.about-panel-bottom{font-size:.63rem;font-weight:800;letter-spacing:.13em}
+.about-panel-mark{align-self:center;font:400 clamp(10rem,38vw,17rem)/.78 var(--display);letter-spacing:-.1em}
+.about-panel-bottom{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #ffffff6b;padding-top:13px}
+.about-story{border-top:1px solid var(--line);padding:32px 0 70px}
+.about-story-grid{display:grid;grid-template-columns:1fr;gap:22px}
+.about-story h2,.about-location h2{font:400 clamp(2.4rem,9vw,5rem)/.95 var(--display);letter-spacing:-.07em;text-transform:uppercase;margin:0}
+.about-story h2{max-width:14ch}
+.about-story-grid p{max-width:50ch;color:#444;line-height:1.7;margin:0 0 16px}
+.about-story-grid a{text-decoration:underline;text-underline-offset:3px}
+.about-location{border-top:1px solid var(--line);padding-top:32px}
+.about-location-heading{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:26px}
+.about-location-heading h2{margin:0 0 17px}
+.about-location-heading p:not(.eyebrow){max-width:45ch;color:#444;line-height:1.7;margin:0}
+.about-location-heading .button{width:100%}
+.about-map-card{background:var(--ink);color:#fff}
+.about-map-viewport{position:relative;overflow:hidden;background:#ddd}
+.about-map-card iframe{display:block;width:100%;height:300px;border:0;background:#ddd;filter:grayscale(1) contrast(.95);pointer-events:none}
+.about-map-pin{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:46px;height:46px;border:2px solid #fff;border-radius:50%;background:var(--ink);color:#fff;font:400 1.1rem var(--display);box-shadow:0 5px 16px #0005;transform:translate(-50%,-50%);pointer-events:none}
+.about-map-caption{display:flex;flex-direction:column;gap:4px;padding:16px 18px}
+.about-map-caption strong{font:400 1rem var(--display);letter-spacing:-.04em}
+.about-map-caption span{color:#ccc;font-size:.77rem}
+@media(min-width:640px){
+ .about-page{padding:0 32px 90px}
+ .about-intro{padding:70px 0 85px}
+ .about-actions .button,.about-location-heading .button{width:auto}
+ .about-brand-panel{min-height:460px;padding:26px}
+ .about-map-card iframe{height:390px}
+ .about-map-caption{flex-direction:row;justify-content:space-between;align-items:center;padding:19px 24px}
+}
+@media(min-width:960px){
+ .about-page{padding:0 5vw 110px}
+ .about-intro{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);align-items:stretch;gap:5vw;min-height:690px}
+ .about-intro-copy{align-self:center}
+ .about-brand-panel{min-height:590px}
+ .about-story{padding:45px 0 95px}
+ .about-story-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:6vw}
+ .about-location{padding-top:45px}
+ .about-location-heading{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+ .about-map-card iframe{height:460px}
+}
 /* Editorial pages, footer and persistent WhatsApp action */
 .editorial-page{min-height:65vh}
 .editorial-page h1{font-size:clamp(3.4rem,12vw,7rem);line-height:.88;margin-bottom:35px}
