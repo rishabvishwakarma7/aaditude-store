@@ -30,16 +30,16 @@ Each product page can now send a WhatsApp availability enquiry to the confirmed 
 - `js/main.js` — navigation, cart, filters and checkout
 - `images/` — locally saved Aaditude Instagram photos and replaceable placeholders
 
-When you publish on a host, change each page's `og:image` to the full public image URL so WhatsApp and other social sites can reliably make previews. Google Fonts require an internet connection; the fallback fonts work offline.
+The live GitHub Pages site is https://rishabvishwakarma7.github.io/aaditude-store/. Its social preview images use absolute public URLs; update them if the hosting URL changes. Google Fonts require an internet connection; the fallback fonts work offline.
 
-## Publish on GitHub Pages
+## Live deployment
 
-This repository is ready for a plain static deployment. The empty .nojekyll file tells GitHub Pages to serve these HTML, CSS, JavaScript and image files directly.
+Live site: https://rishabvishwakarma7.github.io/aaditude-store/
 
-1. Sign in to GitHub on this computer with: gh auth login --web
-2. From this project folder, create and push a public repository with: gh repo create aaditude-store --public --source=. --remote=origin --push
-3. In the new GitHub repository, open Settings > Pages. Under Build and deployment, choose Deploy from a branch. Choose the master branch and /(root), then save.
-4. Open the published URL shown in Pages settings. Check the images, product links, cart, and mobile layout there.
-5. Once the public URL is known, replace each page's relative og:image value with its full public image URL for reliable WhatsApp/social previews.
+GitHub repository: https://github.com/rishabvishwakarma7/aaditude-store
 
-GitHub Free requires a public repository for GitHub Pages. Keep checkout disabled until the real WhatsApp number, UPI details, exact catalogue and store policies are confirmed. The GitHub Pages steps follow the official guides: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site and https://cli.github.com/manual/gh_repo_create.
+GitHub Pages publishes the master branch from /(root). The .nojekyll file serves these static files without a build step. To publish future changes from this folder, commit the edits and run: git push origin master.
+
+The live site is currently a catalogue preview. WhatsApp product enquiries work, but checkout remains disabled until the UPI ID, QR code, exact products, prices, stock and store policies are confirmed. After changing the public hosting address, update the absolute og:image URLs in every HTML page.
+
+GitHub Pages source documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
